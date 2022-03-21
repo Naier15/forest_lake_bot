@@ -142,7 +142,7 @@ def delete_building_by_stage(message, building, stage):
 
 def find_prev_stage(building):
     try:
-        return select('SELECT stage FROM data WHERE building = %s ORDER BY stage DESC OFFSET 1;', \
+        return select('SELECT stage FROM data WHERE building = %s ORDER BY stage DESC LIMIT 1, 1;', \
             (building, )
         )[0][0]
     except:

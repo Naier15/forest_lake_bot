@@ -98,7 +98,7 @@ def image2pdf(docs):
     pdf.add_page()
     for i, doc in enumerate(docs):
         photo = convert_binary_to_image(doc[0], i)
-        pdf.image(photo, x=pdf.w/8, w=pdf.w-(pdf.w/4))
+        pdf.image(photo, x=pdf.w/8, w=pdf.w-(pdf.w/3))
         pdf.ln(20)
         remove(photo)  # модуль os
     path = './Документы.pdf'

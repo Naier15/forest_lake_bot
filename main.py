@@ -244,4 +244,4 @@ def upgrade_chapter():
     chapter += 1
 
 
-bot.polling(none_stop=True)
+bot.infinity_polling()
