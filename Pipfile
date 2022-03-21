@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytelegrambotapi = "*"
+psycopg2 = "*"
+psycopg2-binary = "*"
+fpdf = "*"
+mysql = "*"
+pymysql = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
